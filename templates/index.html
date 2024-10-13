@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Trades Max Prices</title>
+    <style>
+        body{
+            background: #111111;
+            color: aliceblue;
+        }
+        h1{
+            padding-left: 100px;
+            margin-top: 100px;
+        }
+        .graph{
+            border: 1px solid #333333;
+        }
+    </style>
+</head>
+<body>
+    <h1>BINANCE P2P Trade MAX Prices</h1>
+    <div class="graph">
+        {{ graph_html|safe }}
+    </div>
+</body>
+</html>
