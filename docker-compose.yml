@@ -1,8 +1,9 @@
 version: '3.8'
 
 services:
-  web:
+  p2pbinance:
     restart: on-failure
+    container_name: p2pbinance
     build: .
     ports:
       - "5000:5000"
