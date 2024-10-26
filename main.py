@@ -38,7 +38,7 @@ def index():
 
     # convert plotly to html
     graph_html = pio.to_html(fig, full_html=False)
-    return render_template('index.html', graph_html=graph_html)
+    return render_template('/app/templates/index.html', graph_html=graph_html)
 
 
 if __name__ == '__main__':
