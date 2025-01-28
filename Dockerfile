@@ -1,4 +1,5 @@
-FROM python:3.12
+#FROM python:3.12
+FROM python:3.9.11-slim
 WORKDIR /app
 
 COPY requirements.txt  main.py models.py p2p.py /app/
