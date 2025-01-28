@@ -10,7 +10,7 @@ from models import Base, P2PTrade
 
 logging.basicConfig(
     # filename=logfile_path,
-    level=logging.DEBUG,
+    level=logging.WARNING,
     format='%(asctime)s - %(name)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
@@ -111,8 +111,8 @@ def timeout(r):
 def p_to_p_parser():
     while True:
         data_parse()
-        logger.info('Wait 300 sec')
-        timeout(300)
+        # logger.info('Wait 300 sec')
+        timeout(1*60*60)
 
 
 if __name__ == '__main__':

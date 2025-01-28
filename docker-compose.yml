@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  p2pbinance:
+    restart: on-failure
+    container_name: p2pbinance
+    build: .
+    ports:
+      - "5000:5000"
+    networks:
+      - mainnetwork
+    command: python main.py
+
+networks:
+  mainnetwork:
+    external: true
